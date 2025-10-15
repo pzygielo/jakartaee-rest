@@ -28,13 +28,11 @@ import org.jboss.shrinkwrap.api.asset.StringAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Disabled;
 
 /*
  * @class.setup_props: webServerHost;
@@ -415,7 +413,6 @@ public class JAXRSClientIT extends JAXRSCommonClient {
    * obtained from an injected UriInfo
    */
   @Test
-  @Disabled
   public void getNormalizedUriTest() throws Fault {
     setProperty(Property.REQUEST, buildRequest(GET, URIInfoTest.DECODED));
     invoke();

@@ -32,11 +32,9 @@ import jakarta.ws.rs.core.UriBuilderException;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Disabled;
 
 /*
  * @class.setup_props: webServerHost;
@@ -1715,7 +1713,6 @@ public class JAXRSClientIT extends JAXRSCommonClient {
    * IllegalArgumentException is thrown when query cannot be parsed.
    */
   @Test
-  @Disabled
   public void replaceQueryTest4() throws Fault {
     String value = "http://localhost:8080?name1=x&name2=%20&name3=x+y&name4=x%20y";
 
